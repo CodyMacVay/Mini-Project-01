@@ -14,7 +14,7 @@
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="logo" href="index.php"><img src="images/logo.png" alt="Healthy Eating logo"></a>
+      <a class="logo" href="index.php"><img src="images/logo.jpg" alt="Healthy Eating logo"></a>
       <nav class="main-nav" role="navigation" aria-label="Main navigation">
         <a href="index.php">Home</a>
         <a href="about.php">About</a>
