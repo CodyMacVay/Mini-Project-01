@@ -1,52 +1,155 @@
-/* External stylesheet (style.css)
-   - Provides consistent layout, grid, hover effects, tables, and form styling.
-   - Keep this file linked from every page for a consistent look and feel.
-*/
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
 
-/* Base layout */
-html,body{height:100%;}
-body{font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; background:#fcfcf8; color:#222}
-.container{width:90%;max-width:1000px;margin:0 auto;padding:1rem}
-.site-header{background:#2b9348;color:#fff}
-.header-inner{display:flex;align-items:center;justify-content:space-between}
-.logo img{height:48px}
-.main-nav a{color:#fff;margin-left:1rem;text-decoration:none;padding:.25rem}
-.main-nav a:hover{background:rgba(255,255,255,0.08);border-radius:4px}
-.site-footer{background:#f1f1f1;color:#333;padding:.75rem 0;margin-top:2rem}
+header img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
 
-/* Hero */
-.hero{padding:2rem 0;text-align:center}
-.hero .lead{font-size:1.125rem;color:#445}
-.btn{display:inline-block;padding:.6rem 1rem;background:#2b9348;color:#fff;border-radius:6px;text-decoration:none;border:none;cursor:pointer}
-.btn.ghost{background:transparent;border:2px solid #2b9348;color:#2b9348}
-.cta-row{margin-top:1rem}
+#sign {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
 
-/* Features */
-.features{display:flex;gap:1rem;flex-wrap:wrap;margin:1.5rem 0}
-.feature-card{background:#fff;border:1px solid #e6e6e6;border-radius:8px;flex:1 1 30%;padding:.5rem;box-shadow:0 1px 3px rgba(0,0,0,0.03);text-align:center}
-.feature-card img{width:100%;height:140px;object-fit:cover;border-radius:6px}
-.feature-card h3{margin:.5rem 0}
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
 
-/* Recipes grid */
-.recipe-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
-.recipe-card{overflow:hidden;border-radius:8px;border:1px solid #ddd;background:#fff;transition:transform .18s ease, box-shadow .18s ease}
-.recipe-card img{width:100%;height:160px;object-fit:cover;display:block}
-.recipe-card:hover{transform:translateY(-6px);box-shadow:0 8px 20px rgba(0,0,0,.08)}
-.recipe-card figcaption{padding:.75rem}
+nav a {
+    color: white;
+    margin:0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-/* Tables */
-.team-table{width:100%;border-collapse:collapse;margin-top:.5rem}
-.team-table th, .team-table td{border:1px solid #e0e0e0;padding:.5rem;text-align:left}
-.team-table thead{background:#f7f7f7}
+nav a:hover {
+    text-decoration: underline;
+}
 
-/* Forms */
-.content form{max-width:520px}
-.content label{display:block;margin-top:.6rem}
-.content input[type=text], .content input[type=email], .content select{width:100%;padding:.5rem;border:1px solid #ccc;border-radius:4px}
-.form-row{margin-top:.6rem}
-.errors{background:#ffecec;padding:.6rem;border:1px solid #ffb3b3;color:#a00}
-.success{background:#ecffe8;padding:.6rem;border:1px solid #b7e7b7;color:#137300}
-.muted{color:#666;font-size:.9rem}
+h1 {
+    color: #333;
+    margin-top: 20px;
+}
 
-/* Small screens */
-@media (max-width:600px){.header-inner{flex-direction:column;gap:.5rem}.features{flex-direction:column}}
+form {
+    margin-top: 20px;
+}
+
+input[type='text'],
+input[type='email']{
+    padding: 10px;
+    width: 200px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #45a049
+}
+
+.section {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+
+.team {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.team-member {
+    text-align: center;
+    width: 150px;
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius:50%;
+}
+
+.contact-info, .social-links {
+    margin-top: 20px;
+}
+
+.social-links img{
+    width: 30px;
+    margin:0 10px;
+}
+
+iframe {
+    border: 0;
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.feature {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 250px;
+    margin: 10px;
+}
+
+.feature img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.cta {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 8px;
+    font-size: 1.2em;
+}
+
+.preview {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e7f3ff;
+    border-left: 5px solid #2196F3;
+    text-align: left;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 6px;
+}

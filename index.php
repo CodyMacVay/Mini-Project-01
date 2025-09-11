@@ -1,35 +1,52 @@
 <?php
-// index.php - Home page
-$page_title = 'Home';
-include 'includes/header.php';
+echo "
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <link rel='stylesheet' href='CSS/style.css'>
+</head>
+<body>
+    <header>
+        <img src='images/home.jpg' alt='Home Banner'>
+    </header>
+    <nav>
+        <a href='index.php'>Home</a>
+        <a href='about.php'>About</a>
+        <a href='contact.php'>Contact</a>
+        <a href='signup.php'>Signup</a>
+    </nav>
+
+    <div class='section'>
+        <h1>Welcome My Website</h1>
+
+        <div class='features'>
+            <div class='feature'>
+                <img src='images/test.jpg' alt='Testing my knowledge'>
+                <h3>Test</h3>
+                <p>This is my website to showcase my work and what I have learnt so far </p>
+            </div>
+            <div class='feature'>
+                <img src='images/echo.png' alt='Echo Statement'>
+                <h3>Echo</h3>
+                <p>We are learning to use echo to create a faster and easier way </p>
+            </div>
+            <div class='feature'>
+                <img src='images/css.png' alt='CSS Knowledge'>
+                <h3>CSS</h3>
+                <p>We try to use CSS to the best of our knowledge:)</p>
+            </div>
+        </div>
+
+        <div class='cta'>
+            <p>Create your account now</p>
+            <form action='signup.php'>
+                <button type='submit'>Sign Up Now</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+";
 ?>
-<section class="hero">
-  <h1>Healthy Eating</h1>
-  <p class="lead">Simple ideas, balanced meals — small changes, big results.</p>
-  <hr>
-  <p>Explore healthy recipes, learn about good nutrition, and join our mailing list for weekly tips.</p>
-  <div class="cta-row">
-    <a class="btn" href="recipes.php">See Recipes</a>
-    <a class="btn ghost" href="subscribe.php">Join the List</a>
-  </div>
-</section>
 
-<section class="features">
-  <article class="feature-card">
-    <img src="images/salad.jpg" alt="Fresh salad">
-    <h3>Wholesome Meals</h3>
-    <p>Recipes that focus on whole foods, easy prep and great flavour.</p>
-  </article>
-  <article class="feature-card">
-    <img src="images/smoothie.jpg" alt="Smoothie">
-    <h3>Quick & Portable</h3>
-    <p>Smoothies, bowls and snacks for busy days.</p>
-  </article>
-  <article class="feature-card">
-    <img src="images/grains.jpg" alt="Grains">
-    <h3>Balanced Nutrition</h3>
-    <p>Learn how to combine proteins, grains and veg for satisfying plates.</p>
-  </article>
-</section>
-
-<?php include 'includes/footer.php'; ?>
