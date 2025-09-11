@@ -18,7 +18,7 @@ echo "
     </nav>
     <div class='section'>
         <h1>Contact Us</h1>
-        <p>Feel free to reach out using the form below or connect with us through social media.</p>
+        <p>Feel free to reach out using the form below.</p>
 
         <form method='POST' action=''>
             <input type='text' name='name' placeholder='Your Name' required><br>
