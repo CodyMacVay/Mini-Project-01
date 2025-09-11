@@ -31,7 +31,7 @@ echo "
         <div class='contact-info'>
             <p><strong>Email:</strong> itsupport@gmail.com</p>
             <p><strong>Phone:</strong> +44 111 222 3333</p>
-            <p><strong>Location:</strong> London, UK</p>
+            <p><strong>Location:</strong> Leeds, UK</p>
             <p><strong>Hours:</strong> Mon - Fri, 9am - 5pm</p>
         </div>
 
